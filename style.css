@@ -1,0 +1,296 @@
+/* 
+    Main Color: #2961ac
+    Secondary Color: #a6dcfb
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2961ac;
+    --secondary-color: #a6dcfb;
+    --light-color: #5e8fce;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary-color);
+    padding: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+/* Counter */
+.counter {
+    margin-bottom: 50px;
+}
+
+.counter .container {
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.counter-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.counter-text-heading {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2961ac;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.counter-box .counter-data {
+    color: #fff;
+}
+
+.counter-content .day-countdown {
+    color: var(--primary-color);
+    text-align: center;
+} 
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    background: var(--primary-color);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul li {
+    line-height: 2.5;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .card {
+    margin: 20px 30px 30px 0;
+}
+
+#footer-img {
+    max-height: 75px;
+}
+
+
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 40px 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Hamburger Button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 6px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    margin-top: 150px;
+    padding-right: 10px;
+}
+
+.mobile-menu ul li {
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+/* Media Queries for Menu */
+@media (max-width: 960px) {
+
+}
+
+@media (max-width: 670px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
