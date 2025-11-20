@@ -72,7 +72,7 @@ img {
 
 /* Counter */
 .counter {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .counter .container {
@@ -112,14 +112,24 @@ img {
     text-align: center;
 } 
 
+/* Custom Adjust Buttons */
+.custom-adjust{
+    margin-bottom: 50px;
+}
+
+.custom-adjust .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.custom-adjust .btn {
+    width: 8rem;
+}
+
 /* Footer */
 .footer {
     padding: 40px 0;
     background: var(--primary-color);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
 }
 
 .footer ul li {
