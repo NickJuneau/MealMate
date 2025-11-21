@@ -1,0 +1,22 @@
+type User @table {
+  firebaseUid: String!
+  createdAt: Timestamp!
+  email: String
+  displayName: String
+  weeklyAllowance: Int
+}
+
+type MealSwipe @table {
+  user: User!
+  timestamp: Timestamp!
+  mealType: String!
+  location: String
+}
+
+type MealPlan @table {
+  user: User!
+  weeklyLimit: Int!
+  resetDayOfWeek: Int!
+  createdAt: Timestamp!
+  planName: String
+}
