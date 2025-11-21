@@ -27,4 +27,4 @@ It works on desktop and mobile, can be installed on iPhones via “Add to Home S
 ## Future Plans
 
 This version of MealMate is a testing version. I will further implement automation of the tracking so you don't have to adjust the mealswipes yourself.
-That was the original goal of this project. The automation will be done through email as each time you use a retail swipe, grubhub sends out an email to the user.
+That was the original goal of this project. The buttons are temporary. There will be a setting to turn off automation and use the buttons however they are currently for testing as of now.
